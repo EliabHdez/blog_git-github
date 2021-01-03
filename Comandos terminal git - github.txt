@@ -1,0 +1,38 @@
+Comandos y definiciones terminal git
+
+ Definiciones
+
+sha# --> Es el codigo que le da git a cada commit que se realiza ej: commit a2b7868d20b5ac98425894b14ffb30292daaa240
+
+ Comando terminal
+
+pwd --> Muestra la ruta actual
+rm "nombre del archivo" --> Comando para eliminar archivos o informacion. 
+   TENER CUIDADO CON ESTE COMANDO PARA NO BORRAR EL DISCO DURO (LA PARTICION HOME "/")
+history --> Muestra el historial de comandos utilizados en la terminal
+cd --> Nos permite navegar en las diferentes carpetas y rutas. Ya sea regresar entre carpetas o bien ingresar en ellas
+ls --> Muestra los archivos de la ruta actual
+ls -al --> Muestra los archivos OCULTOS de la ruta actual
+clear --> Limpia la terminal
+Ctrl + l --> Limpia la terminal (shortcut)
+mkdir --> Crear una carpeta/folder nuevo
+cd .. --> Regresa una carpeta atras
+touch "nombre del archivo con extension" --> Crea un archivo nuevo
+cat "nombre del archivo" --> Muestra el contenido del archivo
+
+ Comandos git
+
+git config --global user.name --> Crear/asignar el nombre de usuario
+git config --global user.email --> Crear/asignar el email del usuario
+git config --list --> Muestra un listado de configuraciones (normalmente no se tocan)
+git init --> Crea el repositorio local (Forma de iniciar el repositorio para el poryecto o trabajo, este es el primer paso)
+git add "nombre del archivo" --> Agrega los cambios realizados al archivo al staging area
+git add -A --> Agrega los cambios realizados de todos los archivos al staging area de un jalon
+git commit -m "Comentario describiendo el cambio realizado al archivo" --> Agregar el archivo con los cambios efectuados a la base de datos/repositorio local
+git status --> Muestra el estado del archivo, tanto si ha habido un cambio como si este cambio se ha registrado en el staging area o en la base de datos o no
+git log --> Muestra un historial de los commits realizados, visualizandolos del mas reciente (hasta arriba, con la etiqueta head/master) hasta el mas antiguo (hasta abajo)
+git show --> Muestra el ultimo commit realizado. Te permite visualizar lineas sin modificar (grises), lineas eliminadas (rojas), lineas nuevas agregadas (verdes)
+gitt diff sha1(commit original o mas antiguo) sha2(commit mas reciente) --> Permite comparar los cambios realizados entre estos dos commits, se vera reflejada la diferencia que hay con respecto a informacion agregada o eliminada en el archivo (solo funciona si se comparan 2 commits, si se quieren comparar 3 o mas no funciona)
+git reset "sha#" --hard --> Permite resetear el archivo al punto del commit que especifiquemos en el comando, esta forma de reset con hard borra los commits y nos deja el staging area limpio
+git reset "sha#" --soft --> Permite resetear el archivo al punto del commit que especifiquemos en el comando, sin embargo con el reseteado soft nos elimina solo los commit, pero nos deja los cambios que eliminamos en el staging area para que si queremos los convirtamos en commits
+git log --stat --> Es una mezcla entre el git log y el git status, donde predomina mas informacion de git log. Muestra el historial de los commits, añaniendo dentro de la descripcion del commit signos de suma y resta que nos indican el status del archivo de una manera breve y sencilla mediante estos signos (+ -), si algo fue agregado o eliminado
