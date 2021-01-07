@@ -10,6 +10,12 @@ body{
 }
 .header{
     color: blue;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border: solid black 8px;
+    border-radius: 30px;
+    margin-bottom: 70px;
 }
 h1{
     color: red;
