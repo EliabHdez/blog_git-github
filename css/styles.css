@@ -8,6 +8,9 @@ body{
     margin: 70px auto;
     padding: 30px;
 }
+.header{
+    color: blue;
+}
 h1{
     color: red;
     font-size: 50px;
