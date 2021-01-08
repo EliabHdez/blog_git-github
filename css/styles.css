@@ -55,6 +55,7 @@ p{
     margin: 20px;
     padding: 20px;
     text-align: center;
+    border: solid 3px orangered;
 }
 .type{
     font-size: 25px;
