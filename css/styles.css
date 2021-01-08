@@ -21,6 +21,7 @@ body{
 h1{
     color: red;
     font-size: 50px;
+    font-style: italic;
 }
 h2{
     font-size: 30px;
@@ -37,6 +38,7 @@ p{
 .razas{
     color: cornflowerblue;
     font-size: 40px;
+    font-style: italic;
 }
 .husky, .pipeco{
     color: crimson;
