@@ -4,7 +4,7 @@ body{
 .main{
     width: 70%;
     background-color: aquamarine;
-    border: solid 3px yellow;
+    border: solid 5px yellow;
     margin: 70px auto;
     padding: 30px;
 }
@@ -33,7 +33,7 @@ p{
     color: seagreen;
 }
 .h2-2{
-    color: orange;
+    color: orangered;
 }
 .razas{
     color: cornflowerblue;
