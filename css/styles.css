@@ -15,7 +15,8 @@ body{
     padding: 30px;
     border: solid darkred 8px;
     border-radius: 10px;
-    margin-bottom: 70px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     box-shadow: 15px 20px 25px black;
 }
 h1{
