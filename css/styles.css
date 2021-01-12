@@ -45,23 +45,3 @@ p{
     color: crimson;
     font-size: 20px;
 }
-.footer{
-    background-color: blueviolet;
-    padding: 30px;
-    margin-top: 50px;
-}
-.trainning{
-    background-color: pink;
-    font-size: 40px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    border: solid 5px orangered;
-    border-radius: 10px;
-}
-.type{
-    font-size: 25px;
-}
-.parrafo{
-    font-size: 18px;
-}
