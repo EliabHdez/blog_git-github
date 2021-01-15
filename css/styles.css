@@ -30,14 +30,8 @@ h2{
 p{
     font-size: 20px
 }
-.h1-1a{
-    color: purple;
-    font-size: 45px;
-}
 .h1-1{
-    color: rgb(57, 57, 250);
-    font-style: italic;
-    font-size: 40px;
+    color: seagreen;
 }
 .h2-2{
     color: orangered;
@@ -52,24 +46,23 @@ p{
     font-size: 20px;
 }
 .footer{
-    background-color: grey;
-    padding: 35px;
+    background-color: orangered;
+    padding: 22px;
     margin-top: 50px;
 }
 .trainning{
-    background-color: orangered;
-    font-size: 38px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
     margin: 20px;
     padding: 20px;
     text-align: center;
     border: solid 5px greenyellow;
-    border-radius: 30px;
+    border-radius: 80px;
 }
 .type{
     font-size: 30px;
-    color: white;
 }
 .parrafo{
     font-size: 25px;
-    color: white;
 }
