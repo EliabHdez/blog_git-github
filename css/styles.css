@@ -52,12 +52,13 @@ p{
     font-size: 20px;
 }
 .footer{
-    background-color: grey;
+    background-color: orangered;
     padding: 35px;
     margin-top: 50px;
 }
 .trainning{
-    background-color: orangered;
+    background-color: black;
+    color: white;
     font-size: 38px;
     margin: 20px;
     padding: 20px;
@@ -67,9 +68,7 @@ p{
 }
 .type{
     font-size: 30px;
-    color: white;
 }
 .parrafo{
     font-size: 25px;
-    color: white;
 }
