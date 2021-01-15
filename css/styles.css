@@ -30,8 +30,14 @@ h2{
 p{
     font-size: 20px
 }
+.h1-1a{
+    color: purple;
+    font-size: 45px;
+}
 .h1-1{
-    color: seagreen;
+    color: rgb(57, 57, 250);
+    font-style: italic;
+    font-size: 40px;
 }
 .h2-2{
     color: orangered;
