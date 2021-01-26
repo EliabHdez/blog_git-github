@@ -22,8 +22,8 @@ cat "nombre del archivo" --> Muestra el contenido del archivo
 
  Comandos git
 
-	- git config --global user.name --> Crear/asignar el nombre de usuario
-	- git config --global user.email --> Crear/asignar el email del usuario
+	- git config --global user.name "nombre de usuario" --> Crear/asignar el nombre de usuario
+	- git config --global user.email "correo electronico"  --> Crear/asignar el email del usuario
 	- git config --list --> Muestra un listado de configuraciones (normalmente no se tocan)
 	- git init --> Crea el repositorio local (Forma de iniciar el repositorio para el poryecto o trabajo, este es el primer paso)
 	- git add "nombre del archivo" --> Agrega los cambios realizados al archivo al staging area
@@ -55,3 +55,4 @@ cat "nombre del archivo" --> Muestra el contenido del archivo
 	- ssh-keygen -t rsa -b 4096 -C "correo electronico dado de alta en el git local (el que aparece cuando hacemos git config --list)" --> Creara una llave privada junto con una publica mediante el protocolo de seguridad SSH, con el cual podremos intercambiar informacion corriendo menos riesgo de que la informacion pueda ser hackeada o desencriptada, esta informacion enviada en la llave solo podra desencriptarse con la llave privada ("ssh-keygen" = crea las llaves, "-t" = es el tipo de algoritmo que se utilizara para la seguridad, "rsa" = es el tipo de algoritmo, "-b" = cantidad de semillas a utilizar o bien que tan complejo quiero que sea el algoritmo matematico que voy a utilizar, "4096" = numero de semillas (4096 es un numero muy bueno, bastante aceptable y de cierta forma un estandar, "-C" = hace referencia al correo electronico al cual se vincularan las llaves)
 	- eval $(ssh-agent -s) --> Comprobamos que se haya establecido la conexion con las llaves, debe arrojar como resultado "Agent pid + numero"
 	- ssh-add ~"direccion de la ubicacion de la llave privada" (~/.ssh/id-rsa)"
+
