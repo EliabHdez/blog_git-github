@@ -22,8 +22,8 @@ cat "nombre del archivo" --> Muestra el contenido del archivo
 
  Comandos git
 
-	- git config --global user.name "nombre de usuario" --> Crear/asignar el nombre de usuario
-	- git config --global user.email "correo electronico"  --> Crear/asignar el email del usuario
+	- git config --global user.name "username" --> Crear/asignar el nombre de usuario
+	- git config --global user.email "email"  --> Crear/asignar el email del usuario
 	- git config --list --> Muestra un listado de configuraciones (normalmente no se tocan)
 	- git init --> Crea el repositorio local (Forma de iniciar el repositorio para el poryecto o trabajo, este es el primer paso)
 	- git add "nombre del archivo" --> Agrega los cambios realizados al archivo al staging area
