@@ -19,11 +19,15 @@ mkdir --> Crear una carpeta/folder nuevo
 cd .. --> Regresa una carpeta atras
 touch "nombre del archivo con extension" --> Crea un archivo nuevo
 cat "nombre del archivo" --> Muestra el contenido del archivo
+alias "nombre"="comando entre comillas" --> Crea un alias a un comando para no tener que estar escribiendo todo el comando, si no escribiendo el alias despliega el comando al que este alias se refiere. Ej: alias graph="git log --all --graph --decorate --oneline"
 
  Comandos git
 
 	- git config --global user.name "nombre de usuario" --> Crear/asignar el nombre de usuario
 	- git config --global user.email "correo electronico" --> Crear/asignar el email del usuario
+	- git config --global alias."nombre del alias" 'comando git a ejecutar entre comillas simples sin el GIT al inicio' ej: git config --global alias.lo 'log --oneline' --> Sirve para crear alias a los comandos para asi interactuar con ellos y ejecutarlos de manera mas rapida y sencilla sin la necesidad de escribir todo el comando
+	- git config --global unset alias."nombre del alias" --> Sirve para eliminar alias creados
+	- git config --global --get-regexp alias --> Sirve para visualizar una lista de los alias creados que esten existentes y activos en ese momento (los alias eliminados no apoarecen en este listado)
 	- git config --list --> Muestra un listado de configuraciones (normalmente no se tocan)
 	- git init --> Crea el repositorio local (Forma de iniciar el repositorio para el poryecto o trabajo, este es el primer paso)
 	- git add "nombre del archivo" --> Agrega los cambios realizados al archivo al staging area
@@ -34,6 +38,8 @@ cat "nombre del archivo" --> Muestra el contenido del archivo
 	- git log --> Muestra un historial de los commits realizados, visualizandolos del mas reciente (hasta arriba, con la etiqueta head/master) hasta el mas antiguo (hasta abajo)
 	- git log --oneline --> Muestra el historial de commits realizados en forma de lista y de una manera mas breve y simplificada con un numero de sha resumido
 	- git log --all --oneline --> Forza a git a mostrar todos los commits realizados aunque sean demasiados
+	- git log --all --graph --> Muestra el historial de commits con un tipo de grafica mediante lineas en un costado donde podemos visualizar donde realizamos los commits, en que rama, si se creo una rama, se hubo merges etc etc etc
+	- git log --all --graph --decorate --oneline --> Nos muestra el historial de los commits con el estilo de grafica en lineas pero de una manera mas breve y simplificada. Es la manera abreviada del --graph
 	- git log --stat --> Es una mezcla entre el git log y el git status, donde predomina mas informacion de git log. Muestra el historial de los commits, añaniendo dentro de la descripcion del commit signos de suma y resta que nos indican el status del archivo de una manera breve y sencilla mediante estos signos (+ -), si algo fue agregado o eliminado
 	- git show --> Muestra el ultimo commit realizado. Te permite visualizar lineas sin modificar (grises), lineas eliminadas (rojas), lineas nuevas agregadas (verdes)
 	- git diff sha1(commit original o mas antiguo) sha2(commit mas reciente) --> Permite comparar los cambios realizados entre estos dos commits, se vera reflejada la diferencia que hay con respecto a informacion agregada o eliminada en el archivo (solo funciona si se comparan 2 commits, si se quieren comparar 3 o mas no funciona)
