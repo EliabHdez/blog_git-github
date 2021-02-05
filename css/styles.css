@@ -52,7 +52,7 @@ p{
     font-size: 20px;
 }
 .footer{
-    background-color: yellow;
+    background-color: orangered;
     padding: 35px;
     margin-top: 50px;
     margin-bottom: 20px;
@@ -64,7 +64,7 @@ p{
     margin: 20px;
     padding: 20px;
     text-align: center;
-    border: solid 5px blue;
+    border: solid 5px yellowgreen;
     border-radius: 50px;
 }
 .type{
