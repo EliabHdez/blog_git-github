@@ -47,6 +47,7 @@ p{
     color: cornflowerblue;
     font-size: 40px;
     font-style: italic;
+    text-align: center;
 }
 .husky, .pipeco{
     color: crimson;
