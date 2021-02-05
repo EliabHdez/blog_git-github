@@ -19,19 +19,3 @@ body{
     margin-bottom: 50px;
     box-shadow: 15px 20px 20px black;
 }
-h1{
-    color: red;
-    font-size: 50px;
-}
-h2{
-    font-size: 30px;
-}
-p{
-    font-size: 20px
-}
-.h1-1{
-    color: seagreen;
-}
-.h2-2{
-    color: orange;
-}
