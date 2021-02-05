@@ -61,7 +61,8 @@ alias "nombre"="comando entre comillas" --> Crea un alias a un comando para no t
 	- git remote add origin "url del repositorio remoto al cual queremos que se enlace el repo local" --> Este comando enlaza el repositorio local con el remoto para que asi todo lo que trabajemos en el repo local lo podamos llevar al repo remoto y de igual manera lo del repo remoto traerlo al repo local. Este comando enlazara deacuerdo al protocolo de seguridad que tengamos ya sea https o ssh
 	- git remote set-url origin "url o link del protocolo de seguridad que vayamos a ocupar de github" --> Esto lo que hace es permitirnos modificar o cambiar el enlace con el que ya esta trabajando nuestro repo local con el remoto. Esto quiere decir que si lo tenemos trabajando con https y queremos cambair a ssh en el url ponermos el link del protocolo ssh que esta en github y con esto estariamos cambiando el protocolo de seguridad con el que vamos a trabajar 
 	- git tag -a "nombre de version (sin comillas) ej: v1.1" -m "mensaje identificatorio, asi tal cual entre comillas" #sha --> Permite versionar el trabajo que estemos realizando en el punto que especifiquemos con el numero de sha, en otras palabras agregamos versiones
-	. git tag --> Visualizamos las versiones que hayamos creado
+	- git tag --> Visualizamos las versiones que hayamos creado
+	- git show-ref --tags --> Podemos visualizar los numeros de sha que se han ocupado para versionar el archivo
 
  Comando en terminal para trabajar con llaves publicas y privadas con el protocolo de seguridad SSH
 
