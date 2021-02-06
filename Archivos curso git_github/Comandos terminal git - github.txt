@@ -31,7 +31,7 @@ alias "nombre"="comando entre comillas" --> Crea un alias a un comando para no t
 	- git config --list --> Muestra un listado de configuraciones (normalmente no se tocan)
 	- git init --> Crea el repositorio local (Forma de iniciar el repositorio para el poryecto o trabajo, este es el primer paso)
 	- git add "nombre del archivo" --> Agrega los cambios realizados al archivo al staging area
-	- git add -A --> Agrega los cambios realizados de todos los archivos al staging area de un jalon
+	- git add . / -A --> Agrega los cambios realizados de todos los archivos al staging area de un jalon
 	- git commit -m "Comentario describiendo el cambio realizado al archivo" --> Agregar el archivo con los cambios efectuados a la base de datos/repositorio local
 	- git commit -am "Mensaje" --> Es el comando para agregar y comentar (add y commit) al mismo tiempo, hace las funciones de ambos en un solo comando, para no tener que hacer primero el add y despues el commit
 	- git status --> Muestra el estado del archivo, tanto si ha habido un cambio como si este cambio se ha registrado en el staging area o en la base de datos o no
@@ -64,7 +64,7 @@ alias "nombre"="comando entre comillas" --> Crea un alias a un comando para no t
 	- git tag -a "nombre de version (sin comillas) ej: v1.1" -m "mensaje identificatorio, asi tal cual entre comillas" #sha --> Permite versionar el trabajo que estemos realizando en el punto que especifiquemos con el numero de sha, en otras palabras agregamos versiones
 	- git tag --> Visualizamos las versiones que hayamos creado
 	- git show-ref --tags --> Podemos visualizar los numeros de sha que se han ocupado para versionar el archivo
-	- git tag -d "nombre del tag a elimianr (sin comillaS)" --> Elimina el tag indicado (solo lo elimina del repo local)
+	- git tag -d "nombre del tag a elimianr (sin comillas)" --> Elimina el tag indicado (solo lo elimina del repo local)
 	- git push origin :refs/tags/"nombre del tag" --> Elimina el tag indicado del repo remoto (la parte de ref/tags/ sale de lo que aparece despues del sha cuando hacemos el comando git show-ref --tags)
 
  Comando en terminal para trabajar con llaves publicas y privadas con el protocolo de seguridad SSH
