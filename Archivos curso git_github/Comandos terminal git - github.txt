@@ -1,0 +1,74 @@
+Comandos y definiciones terminal git
+
+ Definiciones
+
+sha# --> Es el codigo que le da git a cada commit que se realiza ej: commit a2b7868d20b5ac98425894b14ffb30292daaa240
+
+ Comandos terminal
+
+pwd --> Muestra la ruta actual
+rm "nombre del archivo" --> Comando para eliminar archivos o informacion. 
+   TENER CUIDADO CON ESTE COMANDO PARA NO BORRAR EL DISCO DURO (LA PARTICION HOME "/")
+history --> Muestra el historial de comandos utilizados en la terminal
+cd --> Nos permite navegar en las diferentes carpetas y rutas. Ya sea regresar entre carpetas o bien ingresar en ellas
+ls --> Muestra los archivos de la ruta actual
+ls -al --> Muestra los archivos OCULTOS de la ruta actual
+clear --> Limpia la terminal
+Ctrl + l --> Limpia la terminal (shortcut)
+mkdir --> Crear una carpeta/folder nuevo
+cd .. --> Regresa una carpeta atras
+touch "nombre del archivo con extension" --> Crea un archivo nuevo
+cat "nombre del archivo" --> Muestra el contenido del archivo
+alias "nombre"="comando entre comillas" --> Crea un alias a un comando para no tener que estar escribiendo todo el comando, si no escribiendo el alias despliega el comando al que este alias se refiere. Ej: alias graph="git log --all --graph --decorate --oneline"
+
+ Comandos git
+
+	- git config --global user.name "nombre de usuario" --> Crear/asignar el nombre de usuario
+	- git config --global user.email "correo electronico" --> Crear/asignar el email del usuario
+	- git config --global alias."nombre del alias" 'comando git a ejecutar entre comillas simples sin el GIT al inicio' ej: git config --global alias.lo 'log --oneline' --> Sirve para crear alias a los comandos para asi interactuar con ellos y ejecutarlos de manera mas rapida y sencilla sin la necesidad de escribir todo el comando
+	- git config --global unset alias."nombre del alias" --> Sirve para eliminar alias creados
+	- git config --global --get-regexp alias --> Sirve para visualizar una lista de los alias creados que esten existentes y activos en ese momento (los alias eliminados no apoarecen en este listado)
+	- git config --list --> Muestra un listado de configuraciones (normalmente no se tocan)
+	- git init --> Crea el repositorio local (Forma de iniciar el repositorio para el poryecto o trabajo, este es el primer paso)
+	- git add "nombre del archivo" --> Agrega los cambios realizados al archivo al staging area
+	- git add -A --> Agrega los cambios realizados de todos los archivos al staging area de un jalon
+	- git commit -m "Comentario describiendo el cambio realizado al archivo" --> Agregar el archivo con los cambios efectuados a la base de datos/repositorio local
+	- git commit -am "Mensaje" --> Es el comando para agregar y comentar (add y commit) al mismo tiempo, hace las funciones de ambos en un solo comando, para no tener que hacer primero el add y despues el commit
+	- git status --> Muestra el estado del archivo, tanto si ha habido un cambio como si este cambio se ha registrado en el staging area o en la base de datos o no
+	- git log --> Muestra un historial de los commits realizados, visualizandolos del mas reciente (hasta arriba, con la etiqueta head/master) hasta el mas antiguo (hasta abajo)
+	- git log --oneline --> Muestra el historial de commits realizados en forma de lista y de una manera mas breve y simplificada con un numero de sha resumido
+	- git log --all --oneline --> Forza a git a mostrar todos los commits realizados aunque sean demasiados
+	- git log --all --graph --> Muestra el historial de commits con un tipo de grafica mediante lineas en un costado donde podemos visualizar donde realizamos los commits, en que rama, si se creo una rama, se hubo merges etc etc etc
+	- git log --all --graph --decorate --oneline --> Nos muestra el historial de los commits con el estilo de grafica en lineas pero de una manera mas breve y simplificada. Es la manera abreviada del --graph
+	- git log --stat --> Es una mezcla entre el git log y el git status, donde predomina mas informacion de git log. Muestra el historial de los commits, añaniendo dentro de la descripcion del commit signos de suma y resta que nos indican el status del archivo de una manera breve y sencilla mediante estos signos (+ -), si algo fue agregado o eliminado
+	- git show --> Muestra el ultimo commit realizado. Te permite visualizar lineas sin modificar (grises), lineas eliminadas (rojas), lineas nuevas agregadas (verdes)
+	- git diff sha1(commit original o mas antiguo) sha2(commit mas reciente) --> Permite comparar los cambios realizados entre estos dos commits, se vera reflejada la diferencia que hay con respecto a informacion agregada o eliminada en el archivo (solo funciona si se comparan 2 commits, si se quieren comparar 3 o mas no funciona)
+	- git reset "sha#" --hard --> Permite resetear el archivo al punto del commit que especifiquemos en el comando, esta forma de reset con hard borra los commits y nos deja el staging area limpio
+	- git reset "sha#" --soft --> Permite resetear el archivo al punto del commit que especifiquemos en el comando, sin embargo con el reseteado soft nos elimina solo los commit, pero nos deja los cambios que eliminamos en el staging area para que si queremos los convirtamos en commits
+	- git push --> Enviamos los cambios de un archivo del repositorio local (git) al repositorio remoto (github)
+	- git fetch --> Traemos un archivo del repositorio remoto (github) al repositorio local (git), no queda almacenado en el directorio de git, solo en el repositorio, solo veriamos los commits pero no lo tendriamos fisicamente
+	- git merge --> Fusiona el archivo traido del repositotio remoto al local (git fetch) al directorio, esto quiere decir que lo tendriamos fisicamente en nuestra carpeta
+	- git pull --> Trae los cambios del repositorio remoto tanto al repositorio local como al directorio, con este comando solo traemos los cambios realizados que se encuentran en el repositorio remoto
+	- git clone url --> Trea los archivos fisicamente del repositorio remoto tanto al repositorio local como al directorio, esto se hace solo una vez y posteriormente ocupamos git pull para solo traer los cambios (copia el directorio o los archivos de una persona del repositorio remoto a nuestro repositorio local)
+	- git branch "nombre de la rama nueva" --> Crea una nueva rama de trabajo (cuando se crea una rama se esta generando una copia del archivo en esta nueva rama, por lo tanto esta el archivo original que esta en la rama master mas las copias generadas en cada rama nueva agregada
+	- git branch --list --> Muestra el listado de las ramas existentes
+	- git show-branch --all --> Muestra el historial de las ramas y lo que se ha echo en estas, ya sean cambios, merges etc...
+	- git checkout "nombre de la rama existente" --> Cambiamos entre ramas ya existentes ej "git checkout master". Al cambiar entre ramas veremos el cambio en nuestro archivo deacuerdo a como se encuentre en cada rama, en linux parece ser de forma automatica y en windows hay que refrescar el archivo para visualizar el cambio
+	- git restore "nombre del archivo"--> Restaura el estado del achivo al estado del ultimo commit. Ej: git restore index.html. SOLO SIRVE CUANDO NO SE HA APLICADO UN ADD Y EL ARCHIVO SE ENCUENTRA EN EL UNSTAGE AREA Y QUEREMOS ELIMINAR ESOS CAMBIOS Y ASI QUEDAR COMO ANTES Y QUE NUESTRO ESTATUS APAREZCA LIMPIO
+	- git checkout -- "nombre del archivo" (sin las comillas) --> Restaura el estado del archivo al estado del ultimo commit. Ej: git checkout -- index.html. SOLO SIRVE CUANDO NO SE HA APLICADO UN ADD Y EL ARCHIVO SE ENCUENTRA EN EL UNSTAGE AREA Y QUEREMOS ELIMINAR ESOS CAMBIOS Y ASI QUEDAR COMO ANTES Y QUE NUESTRO ESTATUS APAREZCA LIMPIO
+	- git reset HEAD "nombre del archivo" (sin las comillas) --> Saca el archivo del staging area para regresarlo a la unstage area. En otras palabras deshace el 'add' que hicimos para mandarlo al staging area (es lo mismo que el 'git restore --staged'). SOLO SIRVE PARA CUANDO SE HA HECHO UN ADD Y SE HA MANDADO AL STAGING AREA Y QUEREMOS REGRESARLO AL UNSTAGE AREA
+	- git restore --staged "nombre del archivo" --> Saca el archivo del staging area para regresarlo a la unstage area. En otras palabras deshace el 'add' que hicimos para mandarlo al staging area (es lo mismo que el 'git reset HEAD'). SOLO SIRVE PARA CUANDO SE HA HECHO UN ADD Y SE HA MANDADO AL STAGING AREA Y QUEREMOS REGRESARLO AL UNSTAGE AREA
+	- git pull origin master --allow-unrelated-histories --> Este comando sirve para cuando se crea por primnera vez un repositorio remoto, si este se creo con la rama master, fusiona esta rama master del repo remoto con la rama master del repo local, ya que si no se hace esta operacion al querer subir los archivos de la rama master del repo local al repo remoto, nos va a dar error, ya que git y github no aceptan dos ramas con el mismo nombre, entonces tenemos que forzar esta fusion de las ramas master para que podamos tanto llevar como traer archivos de los repos
+	- git remote add origin "url del repositorio remoto al cual queremos que se enlace el repo local" --> Este comando enlaza el repositorio local con el remoto para que asi todo lo que trabajemos en el repo local lo podamos llevar al repo remoto y de igual manera lo del repo remoto traerlo al repo local. Este comando enlazara deacuerdo al protocolo de seguridad que tengamos ya sea https o ssh
+	- git remote set-url origin "url o link del protocolo de seguridad que vayamos a ocupar de github" --> Esto lo que hace es permitirnos modificar o cambiar el enlace con el que ya esta trabajando nuestro repo local con el remoto. Esto quiere decir que si lo tenemos trabajando con https y queremos cambair a ssh en el url ponermos el link del protocolo ssh que esta en github y con esto estariamos cambiando el protocolo de seguridad con el que vamos a trabajar 
+	- git tag -a "nombre de version (sin comillas) ej: v1.1" -m "mensaje identificatorio, asi tal cual entre comillas" #sha --> Permite versionar el trabajo que estemos realizando en el punto que especifiquemos con el numero de sha, en otras palabras agregamos versiones
+	- git tag --> Visualizamos las versiones que hayamos creado
+	- git show-ref --tags --> Podemos visualizar los numeros de sha que se han ocupado para versionar el archivo
+	- git tag -d "nombre del tag a elimianr (sin comillaS)" --> Elimina el tag indicado (solo lo elimina del repo local)
+	- git push origin :refs/tags/"nombre del tag" --> Elimina el tag indicado del repo remoto (la parte de ref/tags/ sale de lo que aparece despues del sha cuando hacemos el comando git show-ref --tags)
+
+ Comando en terminal para trabajar con llaves publicas y privadas con el protocolo de seguridad SSH
+
+	- ssh-keygen -t rsa -b 4096 -C "correo electronico dado de alta en el git local (el que aparece cuando hacemos git config --list)" --> Creara una llave privada junto con una publica mediante el protocolo de seguridad SSH, con el cual podremos intercambiar informacion corriendo menos riesgo de que la informacion pueda ser hackeada o desencriptada, esta informacion enviada en la llave solo podra desencriptarse con la llave privada ("ssh-keygen" = crea las llaves, "-t" = es el tipo de algoritmo que se utilizara para la seguridad, "rsa" = es el tipo de algoritmo, "-b" = cantidad de semillas a utilizar o bien que tan complejo quiero que sea el algoritmo matematico que voy a utilizar, "4096" = numero de semillas (4096 es un numero muy bueno, bastante aceptable y de cierta forma un estandar, "-C" = hace referencia al correo electronico al cual se vincularan las llaves)
+	- eval $(ssh-agent -s) --> Comprobamos que se haya establecido la conexion con las llaves, debe arrojar como resultado "Agent pid + numero"
+	- ssh-add ~"direccion de la ubicacion de la llave privada" (~/.ssh/id-rsa)"
