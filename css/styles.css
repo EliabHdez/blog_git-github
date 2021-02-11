@@ -1,5 +1,8 @@
 body{
     background-color: black;
+    font-weight: bold;
+    font-style: oblique;
+    
 }
 .main{
     width: 70%;
@@ -36,7 +39,7 @@ p{
     font-size: 20px
 }
 .h1-1a{
-    color: purple;
+    color: red;
     font-size: 45px;
 }
 .h1-1{
@@ -45,10 +48,10 @@ p{
     font-size: 40px;
 }
 .h2-2{
-    color: orangered;
+    color: purple;
 }
 .razas{
-    color: cornflowerblue;
+    color: red;
     font-size: 40px;
     font-style: italic;
     text-align: center;
@@ -56,10 +59,12 @@ p{
 .husky, .pipeco{
     color: crimson;
     font-size: 20px;
+    font-weight: bold;
 }
 .footer{
     /* background-color: orangered; */
-    border-top: 5px solid red;
+    border-top: 5px solid orangered;
+    border-radius: 5px;
     padding: 30px;
     margin-top: 70px;
     margin-bottom: 20px;
