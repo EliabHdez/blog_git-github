@@ -6,7 +6,7 @@ body{
     background-color: aquamarine;
     border: solid 5px yellow;
     margin: 70px auto;
-    padding: 30px;
+    padding: 50px;
     background-image: url(../Imagenes/velkan.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,8 +19,8 @@ body{
     padding: 30px;
     border: solid darkred 5px;
     border-radius: 10px;
-    margin-top: 0px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 70px;
     box-shadow: 15px 20px 20px black;
 }
 h1{
@@ -58,9 +58,10 @@ p{
     font-size: 20px;
 }
 .footer{
-    background-color: orangered;
-    padding: 35px;
-    margin-top: 50px;
+    /* background-color: orangered; */
+    border-top: 5px solid red;
+    padding: 30px;
+    margin-top: 70px;
     margin-bottom: 20px;
 }
 .trainning{
@@ -70,7 +71,7 @@ p{
     margin: 20px;
     padding: 20px;
     text-align: center;
-    border: solid 5px greenyellow;
+    border: solid 10px greenyellow;
     border-radius: 50px;
 }
 .type{
@@ -79,4 +80,7 @@ p{
 }
 .parrafo{
     font-size: 25px;
+}
+.division{
+    color: red;
 }
