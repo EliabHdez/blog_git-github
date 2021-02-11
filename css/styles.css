@@ -63,6 +63,7 @@ p{
 }
 .footer{
     /* background-color: orangered; */
+
     border-top: 5px solid orangered;
     border-radius: 5px;
     padding: 30px;
