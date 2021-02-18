@@ -7,7 +7,9 @@ sha# --> Es el codigo que le da git a cada commit que se realiza ej: commit a2b7
  Comandos terminal
 
 pwd --> Muestra la ruta actual
-rm "nombre del archivo" --> Comando para eliminar archivos o informacion. Solo sirve para archivos, si se quiere eliminar directorios, carpetas o otro tipo de elementos hay que agregar  el guion (-) mas la letra correspondiente Ej: rm -d, -r etc + nombre carpeta, dir etc 
+rm "nombre del archivo" --> Comando para eliminar archivos o informacion. Este comando por si solo solo funciona con archivos, no sirve si queremos eliminar carpetas, folders etc
+rm -d / --dir nombre de la carpeta o folder --> Elimina directorios, carpetas o folders vacios
+rm -r / -R nombre del directorio --> Elimina carpetas, folders o directorios y su contenido de forma recursiva 
    TENER CUIDADO CON ESTE COMANDO PARA NO BORRAR EL DISCO DURO (LA PARTICION HOME "/")
 history --> Muestra el historial de comandos utilizados en la terminal
 cd --> Nos permite navegar en las diferentes carpetas y rutas. Ya sea regresar entre carpetas o bien ingresar en ellas
