@@ -35,6 +35,10 @@ h1{
 h2{
     font-size: 30px;
 }
+.p_names{
+    text-align: center;
+    font-size: 26px;
+}
 p{
     font-size: 20px;
     color: yellowgreen;
