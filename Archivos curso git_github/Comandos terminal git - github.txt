@@ -45,6 +45,7 @@ pull request --> Es la manera correcta de colaborar con otros proyectos, si real
 	- git commit -am "Mensaje" --> Es el comando para agregar y comentar (add y commit) al mismo tiempo, hace las funciones de ambos en un solo comando, para no tener que hacer primero el add y despues el commit
 	- git status --> Muestra el estado del archivo, tanto si ha habido un cambio como si este cambio se ha registrado en el staging area o en la base de datos o no
 	- git log --> Muestra un historial de los commits realizados, visualizandolos del mas reciente (hasta arriba, con la etiqueta head/master) hasta el mas antiguo (hasta abajo)
+	git reflog --> Muestra todo el historial de forma mucho mas detallada, sin importar nada. Commits, navegacion entre ramas, rebases, pulls, pushs etc etc etc...
 	- git log --oneline --> Muestra el historial de commits realizados en forma de lista y de una manera mas breve y simplificada con un numero de sha resumido
 	- git log --all --oneline --> Forza a git a mostrar todos los commits realizados aunque sean demasiados
 	- git log --all --graph --> Muestra el historial de commits con un tipo de grafica mediante lineas en un costado donde podemos visualizar donde realizamos los commits, en que rama, si se creo una rama, se hubo merges etc etc etc
