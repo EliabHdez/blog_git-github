@@ -22,6 +22,13 @@ cd .. --> Regresa una carpeta atras
 touch "nombre del archivo con extension" --> Crea un archivo nuevo
 cat "nombre del archivo" --> Muestra el contenido del archivo
 alias "nombre"="comando entre comillas" --> Crea un alias a un comando para no tener que estar escribiendo todo el comando, si no escribiendo el alias despliega el comando al que este alias se refiere. Ej: alias graph="git log --all --graph --decorate --oneline"
+pull request --> Es la manera correcta de colaborar con otros proyectos, si realizamos cambios y queremos que el dueño del repo o proyecto acepte estos cambios necesitamos hacerlo mediante un pull request
+
+- Para colaborar con un proyecto, primero necesitamos hacer un fork del proyecto original, esto hara una copia por decirlo de alguna maeera a nuestro repo remoto, poosterior a esto hacemos un git clone de nuestro repo remoto a nuestro repo local para poder trabajar con el proyecto, adicional a esto necesitamos crear un canal de comunicacion entre el repo remoto original a nuestro repo local, para que podamos traernos los cambios que se vayan generando en el proyecto original. *1
+
+*1 - Este canal de comunicacion lo hacemos por medio del comando git remote add upstream y la url ssh del proyecto original. El "upstream es un standar para la comunicacion entre canales de los repos orginales y los que colaboran con el proyecto"
+
+-- No confundir el origin con el upstream. El origin es para la comunicacion entre nuestro repo local y nuestro repo remoto. El upstrean es para la comunicacion entre nuestro repo local con el repo remoto original, el repo remoto del proyecto con el que estamos colaborando... 
 
  Comandos git
 
