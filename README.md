@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+#Curso de Git y Github
 
-You can use the [editor on GitHub](https://github.com/EliabHdez/blog_git-github/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Este repositorio fue creado con la finalidad de llevar y seguir un curso donde aprendi a utilizar Git y Github.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+###Comandos Git
 
-### Markdown
+- Aprendi los comandos mas utilizados en Git
+- Aprendi cuales son consideradas las malas practicas
+- Aprendi el flujo de trabajo y como es que se llevan proyectos reales
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+###Github
 
-```markdown
-Syntax highlighted code block
+- Aprendi como es el flujo de trabajo en Github
+- Aprendi lo mas posible del reposotorio remoto y mucho de lo que se ve en este y en gran mayoria lo que tiene disponible y lo que se puede hacer directamente desde github
+- Aprendi como colaborar con un repo o proyecto que ya existe, por medio del watch, star, fork y los pull request
 
-# Header 1
-## Header 2
-### Header 3
+**Table of Contents**
 
-- Bulleted
-- List
+{TOCM}
 
-1. Numbered
-2. List
+{TOC}
 
-**Bold** and _Italic_ and `Code` text
+###Images
 
-[Link](url) and ![Image](src)
-```
+Git:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+!{}https://agustinducca.com/blog/wp-content/uploads/2020/01/git_destacada-1024x426-1.png
 
-### Jekyll Themes
+Github:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/EliabHdez/blog_git-github/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+!{}https://res.cloudinary.com/practicaldev/image/fetch/s--sWV8Y0kc--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/kml9j34p9taplrnqtcez.jpg
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+###End
