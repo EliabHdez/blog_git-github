@@ -1,4 +1,4 @@
-# Curso de Git y Github
+# "Curso de Git y Github"
 
 Este repositorio fue creado con la finalidad de llevar y seguir un curso donde aprendi a utilizar Git y Github.
 
