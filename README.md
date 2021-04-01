@@ -16,16 +16,16 @@ Este repositorio fue creado con la finalidad de llevar y seguir un curso donde a
 
 **Table of Contents**
 
-{TOCM}
+[TOCM]
 
-{TOC}
+[TOC]
 
 ### Images
 
 Git:
 
 ![]
-C:\Users\moise\OneDrive\Documentos\Git y Github\Curso_de_Git_y_Github\Imagenes\git_readme.png
+C:/Users/moise/OneDrive/Documentos/Git y Github/Curso_de_Git_y_Github/Imagenes/git_readme.png
 
 Github:
 
