@@ -25,11 +25,11 @@ Este repositorio fue creado con la finalidad de llevar y seguir un curso donde a
 Git:
 
 ![]
-https://agustinducca.com/blog/wp-content/uploads/2020/01/git_destacada-1024x426-1.png
+C:\Users\moise\OneDrive\Documentos\Git y Github\Curso_de_Git_y_Github\Imagenes\git_readme.png
 
 Github:
 
 ![]
-https://res.cloudinary.com/practicaldev/image/fetch/s--sWV8Y0kc--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/kml9j34p9taplrnqtcez.jpg
+C:\Users\moise\OneDrive\Documentos\Git y Github\Curso_de_Git_y_Github\Imagenes\github_readme.jpg
 
 ### End
