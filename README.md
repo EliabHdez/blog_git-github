@@ -25,11 +25,11 @@ Este repositorio fue creado con la finalidad de llevar y seguir un curso donde a
 Git:
 
 ![]
-C:/Users/moise/OneDrive/Documentos/Git y Github/Curso_de_Git_y_Github/Imagenes/git_readme.png
+https://github.com/EliabHdez/blog_git-github/blob/master/Imagenes/git_readme.png
 
 Github:
 
 ![]
-C:\Users\moise\OneDrive\Documentos\Git y Github\Curso_de_Git_y_Github\Imagenes\github_readme.jpg
+https://github.com/EliabHdez/blog_git-github/commit/2ff079b16c3a7162c2217fe19f1a97bce977658a
 
 ### End
