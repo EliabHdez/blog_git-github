@@ -123,3 +123,17 @@ pull request --> Es la manera correcta de colaborar con otros proyectos, si real
  El archivo readme.md se crea en un lenguaje de marcado diferente, este lo podemos encontrar en github en la siguiente pagina: pandao.github.io/editor.md/en.html
 
 "Crear el archivo readme para el repo que tengo donde estoy haciendo la pagina de los perros"
+
+PASOS PARA LA CREACION DE UN NUEVO REPOSITORIO LOCAL, REMOTO Y LA COMUNICACION ENTRE ESTOS
+
+	- Crear la carpeta para el repo local
+	- Traer los archivos con los que se van a trabajar a la nueva carpeta
+	- Hacer el git init
+	- Agregar todos los cambios y archivos al repo remoto por medio del git add y commit
+	- Crear un repo remoto
+	- Copiar la url del repo remoto
+	- Crear la coneccion entre estos con el git remote add origin url del repo remoto
+	- Verificar la coneccion con git remote -v
+	- Fusionar las ramas master del repo local y del remoto con el comando git pull origin master --allow-unrelated-histories, para forzar la fusion entre las ramas master del repo local con el remoto y asi quitar el error que nos arroja cuando queremos hacer un git push por primera vez para llevar los archivos del repo local al remoto
+	- Enviar los archivos del repo local al remoto con el git push
+	- Ahora si ya podemos trabajar de forma normal y habitual con los repos
