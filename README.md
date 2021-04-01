@@ -12,7 +12,7 @@ Este repositorio fue creado con la finalidad de llevar y seguir un curso donde a
 
 - Aprendi como es el flujo de trabajo en Github
 - Aprendi lo mas posible del reposotorio remoto y mucho de lo que se ve en este y en gran mayoria lo que tiene disponible y lo que se puede hacer directamente desde github
-- Aprendi como colaborar con un repo o proyecto que ya existe, por medio del watch, star, fork y los pull request
+- Aprendi como colaborar con un repo o proyecto ya existente, por medio del watch, star, fork y los pull request
 
 **Table of Contents**
 
