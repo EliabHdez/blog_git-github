@@ -24,12 +24,14 @@ Este repositorio fue creado con la finalidad de llevar y seguir un curso donde a
 
 Git:
 
-![]
-(https://github.com/EliabHdez/blog_git-github/blob/master/Imagenes/git_readme.png)
+![](https://github.com/EliabHdez/blog_git-github/blob/master/Imagenes/git_readme.png)
+
+> Aprendiendo Git
 
 Github:
 
-![]
-(https://github.com/EliabHdez/blog_git-github/commit/2ff079b16c3a7162c2217fe19f1a97bce977658a)
+![](https://github.com/EliabHdez/blog_git-github/blob/master/Imagenes/github_readme.jpg)
+
+> Aprendiendo Github
 
 ### End
