@@ -48,7 +48,7 @@ pull request --> Es la manera correcta de colaborar con otros proyectos, si real
 	- git status --> Muestra el estado del archivo, tanto si ha habido un cambio como si este cambio se ha registrado en el staging area o en la base de datos o no
 	- git log --> Muestra un historial de los commits realizados, visualizandolos del mas reciente (hasta arriba, con la etiqueta head/master) hasta el mas antiguo (hasta abajo)
 	- git log -S "palabra(entre comillas)" --> Nos permite buscar los commits que contengan la palabra descrita en el comando Esta palabra se tuvo que habre ocupado en el comentario que agregamos cuando hacemmosel comiit. Ej git log -S "cambio"
-	- git reflog --> Muestra todo el historial de forma mucho mas detallada, sin importar nada. Commits, navegacion entre ramas, rebases, pulls, pushs etc etc etc...
+	- git reflog --> Muestra todo el historial de forma mucho mas detallada, paso por paso, sin importar nada. Commits, navegacion entre ramas, rebases, pulls, pushs etc etc etc...
 	- git log --oneline --> Muestra el historial de commits realizados en forma de lista y de una manera mas breve y simplificada con un numero de sha resumido
 	- git log --all --oneline --> Forza a git a mostrar todos los commits realizados aunque sean demasiados
 	- git log --all --graph --> Muestra el historial de commits con un tipo de grafica mediante lineas en un costado donde podemos visualizar donde realizamos los commits, en que rama, si se creo una rama, se hubo merges etc etc etc
