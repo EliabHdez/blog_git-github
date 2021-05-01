@@ -36,7 +36,7 @@ pull request --> Es la manera correcta de colaborar con otros proyectos, si real
 	- git config --global user.name "nombre de usuario" --> Crear/asignar el nombre de usuario
 	- git config --global user.email "correo electronico" --> Crear/asignar el email del usuario
 	- git config --global alias."nombre del alias" 'comando git a ejecutar entre comillas simples sin el GIT al inicio' ej: git config --global alias.lo 'log --oneline' --> Sirve para crear alias a los comandos para asi interactuar con ellos y ejecutarlos de manera mas rapida y sencilla sin la necesidad de escribir todo el comando
-	- git config --global unset alias."nombre del alias" --> Sirve para eliminar alias creados
+	- git config --global --unset alias."nombre del alias" --> Sirve para eliminar alias creados
 	- git config --global --get-regexp alias --> Sirve para visualizar una lista de los alias creados que esten existentes y activos en ese momento (los alias eliminados no apoarecen en este listado)
 	- git config --list --> Muestra un listado de configuraciones (normalmente no se tocan)
 	- git init --> Crea el repositorio local (Forma de iniciar el repositorio para el poryecto o trabajo, este es el primer paso)
