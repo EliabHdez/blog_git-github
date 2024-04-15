@@ -81,7 +81,7 @@ pull request --> Es la manera correcta de colaborar con otros proyectos, si real
 	- git tag -a "nombre de version (sin comillas) ej: v1.1" -m "mensaje identificatorio, asi tal cual entre comillas" #sha --> Permite versionar el trabajo que estemos realizando en el punto que especifiquemos con el numero de sha, en otras palabras agregamos versiones
 	- git tag --> Visualizamos las versiones que hayamos creado
 	- git show-ref --tags --> Podemos visualizar los numeros de sha que se han ocupado para versionar el archivo
-	- git tag -d "nombre del tag a elimianr (sin comillas)" --> Elimina el tag indicado (solo lo elimina del repo local)
+	- git tag -d "nombre del tag a eliminar (sin comillas)" --> Elimina el tag indicado (solo lo elimina del repo local)
 	- git push origin :refs/tags/"nombre del tag" --> Elimina el tag indicado del repo remoto (la parte de ref/tags/ sale de lo que aparece despues del sha cuando hacemos el comando git show-ref --tags)
 	- git stash --> Nos permite almacenar cambios en un espacio de memoria virtual de forma temporal, para que asi podamos movernos entre ramas sin la necesidad de crear commits para guardar estos cambios, lo cual es necesario si queremos movernos entre ramas pero hay cambios de por medio. Esto lo podemos evitar con git stash, posterior a esto podemos recuperar estos cambios en cualquier momento y en cualquier rama
 	- git stash pop --> Nos permite recuperar los cambios almacenados con el comando git stash. Con este comando podemos recuperar dichos cambios que se encuentran en un espacio de memoria virtual en cualquier momento y en cualquier rama
@@ -89,14 +89,14 @@ pull request --> Es la manera correcta de colaborar con otros proyectos, si real
 	- git stash branch "nombre rama nueva(sin comillas)" --> Nos permite llevarnos los cambios guardados en un stach hacia una nueva rama de forma directa. Tiene que haber un stash ya creado de por medio
 	- git stash drop --> Elimina los stash que tengamos almacenados o creados
 	- git stash pop "numero de stash" --> Nos permite recuperar los cambios guardados en un stash por medio del numero asignado a este (stash{0,1,2,etc}), esto siempre y cuando tengamos mas de un stash almacenados o creados
-	- git clean --> Nos sirve para eliminar todos los archivos que no estan trackeados. Este comando no fucniona por si solo, tenemos que utilizar un elemento o instruccion adicional para ejecutarlo
+	- git clean --> Nos sirve para eliminar todos los archivos que no estan trackeados. Este comando no funciona por si solo, tenemos que utilizar un elemento o instruccion adicional para ejecutarlo
 	- git clean --dry-run --> Nos sirve para visualizar que elementos borrara el comando git clean. Por decirlo de otra manera git nos muestra en forma de aviso o advertencia que archivos seran eliminados y asi nosotros proceder o no al borrado
 	- git clean -f --> Con este comando eliminamos ahora si los archivos que no estan trackeados. El elemento "-f" es una instruccion que nos sirve para forzar por decirlo de alguna manera el borrado o limpieza. Tenemos otras opciones disponibles como -i, -n etc, pero estas las utilizaremos dependiendo de que queramos hacer con el comando git clean
 	- git grep --> Imprime las lineas que coinciden con un patron. Ej git grep in: Nos muestra todas las palabras in o todas las palabras que contienen estas dos letras en todos los archivos del repo, aunque estos archivos se encuentren dentro de carpetas
 	- git grep -n --> imprime las lineas que coinciden con un patron, pero nos indica en que numero de linea se encuentran dichas palabras. Esto es gracias al comando o instruccion u opcion "n"
-	- git shortlog --> Nos muestra el historial completo de las personas que ha realizado los cambios y commits. Es como el historial de los commits, pero en este caso muestra el historial de quien a realiazdo dichos commits
+	- git shortlog --> Nos muestra el historial completo de las personas que ha realizado los cambios y commits. Es como el historial de los commits, pero en este caso muestra el historial de quien a realizado dichos commits
 	- git shortlog -sn --> Nos muestra de forma breve el historial de quienes (personas) han realizado cambios o commits. Indicando y enfocandose en el numero de cambios que realizo cada uno
-	- git shortlog -sn --all --> Nos muestra el historial completo, por ej si alguien no solo ha echo commits, si no que tambien ah borrado commits, esto nos aparece igual de forma numerica, solo que si hay algo adicional lo suma a la cantidad de actos realizados por dicha persona
+	- git shortlog -sn --all --> Nos muestra el historial completo, por ej si alguien no solo ha hecho commits, si no que tambien ha borrado commits, esto nos aparece igual de forma numerica, solo que si hay algo adicional lo suma a la cantidad de actos realizados por dicha persona
 	- git shortlog -sn --all --no-merge --> Me muestra el historial sin los merges realizados, sin el "no-merge" en el historial parecen tambien los merges ya que tambien al momento de hacer la fusion/merge se guarda dicho merge como un commit, pero con el "no-merge" estos ultimos no aparecen, ya que le estamos diciendo a git que nos muestre los commits que se realizaron mediante el comando commit como tal
 	- git blame archivo --> Nos muestra quien ha sido el responsable de todo lo que se ha realizado en el proyecto, es un informe detallado de que ha echo cada persona o colaborador, esta informacion no la brinda con lujo y detalle
 	- git blame archivo -L(numero de linea inicial),(numero de linea final) (sin parentesis en los numeros de las lineas) --> Nos muestra quien es el responsable de lo realizado en las lineas del archivo descritas en el comando. Ej git blame index.html -L10,25
@@ -107,9 +107,9 @@ pull request --> Es la manera correcta de colaborar con otros proyectos, si real
 		Si lo vamos a hacer ya sea por necesidad o gusto, es necesasario realizarlo de la manera correcta, de lo contrario podriamos regarla; para hacerlo de la manera correcta es:
 			Primero hacemos el rebase en la rama externa
 			Segundo hacemos el rebase en la rama principal
-			Estos dos pasos tienen que ser despues de haber echo nuestros cambios y que todo este guardado correctamente, ya que si no, podemos generar un problema, ya sea por sobreescribir lineas o por que nos falto algo para que se pudiera hacer el rebase de forma correcta. Cabe aclarar que esto no me quedo muy claro del todo, es como lo entendi, asi que no me tengo que confiar mucho de lo aqui descrito conforme a como ocupar o aplicar un rebase. La idea es que tenagamos esos cambios despues de hacer el rebase, que la rama externa se fucione con la master o principal como si hubieramos echo un merge, pero que en el github aparezca como si se hubieran echo directo en la master
+			Estos dos pasos tienen que ser despues de haber hecho nuestros cambios y que todo este guardado correctamente, ya que si no, podemos generar un problema, ya sea por sobreescribir lineas o por que nos falto algo para que se pudiera hacer el rebase de forma correcta. Cabe aclarar que esto no me quedo muy claro del todo, es como lo entendi, asi que no me tengo que confiar mucho de lo aqui descrito conforme a como ocupar o aplicar un rebase. La idea es que tenagamos esos cambios despues de hacer el rebase, que la rama externa se fucione con la master o principal como si hubieramos echo un merge, pero que en el github aparezca como si se hubieran echo directo en la master
 	- git rebase --abort --> Nos sirve para abortar el ultimo rebase realizado. Este comando nos puede servir para solucionar los problemas o conflictos que lleguemos a tener al hacer un rebase
-	- git rebase --continue --> Nos sirve para aceptar los cambios que tengamos pendientes al momento de hacer un rebase pero que este por alguna razon nos este dando un problema o conflicto, ya sea por algo anda o nos quedo mal al momento de hacer el rebase
+	- git rebase --continue --> Nos sirve para aceptar los cambios que tengamos pendientes al momento de hacer un rebase pero que este por alguna razon nos este dando un problema o conflicto, ya sea por algo que no anda o porque algo nos quedo mal al momento de hacer el rebase
 	- git rebase --skip --> Este comando va de la mano con el comando git rebase --continue, este comando comando de skip se tiene que ejecutar de fomra seguida del continue para terminar el proceso de "correcion y aceptacion" de los cambios que nos estan generando conflictos en el reabse
 
  Comando en terminal para trabajar con llaves publicas y privadas con el protocolo de seguridad SSH
@@ -131,7 +131,7 @@ PASOS PARA LA CREACION DE UN NUEVO REPOSITORIO LOCAL, REMOTO Y LA COMUNICACION E
 	- Hacer el git init
 	- Agregar todos los cambios y archivos al repo local por medio del git add y commit
 	- Crear un repo remoto
-	- Copiar la url del repo remoto (esta se [pegara en el sig paso)
+	- Copiar la url del repo remoto (esta se pegara en el sig paso)
 	- Crear la coneccion entre estos con el git remote add origin url del repo remoto
 	- Verificar la coneccion con git remote -v
 	- Fusionar las ramas master del repo local y del remoto con el comando git pull origin master --allow-unrelated-histories, para forzar la fusion entre las ramas master del repo local con el remoto y asi quitar el error que nos arroja cuando queremos hacer un git push por primera vez para llevar los archivos del repo local al remoto
