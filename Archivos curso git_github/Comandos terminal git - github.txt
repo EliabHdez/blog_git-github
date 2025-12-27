@@ -134,6 +134,12 @@ PASOS PARA LA CREACION DE UN NUEVO REPOSITORIO LOCAL, REMOTO Y LA COMUNICACION E
 	- Copiar la url del repo remoto (esta se pegara en el sig paso)
 	- Crear la coneccion entre estos con el git remote add origin url del repo remoto
 	- Verificar la coneccion con git remote -v
-	- Fusionar las ramas master del repo local y del remoto con el comando git pull origin master --allow-unrelated-histories, para forzar la fusion entre las ramas master del repo local con el remoto y asi quitar el error que nos arroja cuando queremos hacer un git push por primera vez para llevar los archivos del repo local al remoto
+[ ACTUALIZACION ]
+	*** El siguiente paso al parecer ya cambio, en el ultimo repositorio que cree no sirvio. Hacerlo de la manera que se describe abajo del paso que viene a continuacion ***
+	- *** Fusionar las ramas master del repo local y del remoto con el comando git pull origin master --allow-unrelated-histories, para forzar la fusion entre las ramas master del repo local con el remoto y asi quitar el error que nos arroja cuando queremos hacer un git push por primera vez para llevar los archivos del repo local al remoto ***
+	- >>> En el ultimo repo creado el dia 26-12-25 lo tuve que hacer de la siguiente manera:
+		git remote add origin "url del repo remoto" (sin las comillas) 
+		git branch -M main
+		git push -u origin main
 	- Enviar los archivos del repo local al remoto con el git push
 	- Ahora si ya podemos trabajar de forma normal y habitual con los repos
